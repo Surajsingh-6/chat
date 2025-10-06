@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Local Chat — Minimal Black</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="wrap">
+    <header class="topbar" style="border:1px solid rgb(183, 111, 255);">
+      <div class="brand">Chat-Application</div>
+      <div class="controls">
+        <input id="room" placeholder="room name" value="room1" />
+        <input id="name" placeholder="your name" value="You" />
+        <button id="connectBtn">Connect</button>
+      </div>
+    </header>
+
+    <section class="chat-area" style="border:1px solid rgba(255, 255, 255, 0.434);">
+      <div id="meta" class="meta">Not connected</div>
+      <ul id="messages" class="messages" aria-live="polite"></ul>
+      <div id="typing" class="typing"></div>
+      <form id="composer" class="composer" autocomplete="off">
+        <input id="messageInput" placeholder="Type a message and press Enter" style="border:1px solid rgba(255, 255, 255, 0.434);" />
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="/client.js"></script>
+</body>
+</html>
